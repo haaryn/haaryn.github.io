@@ -1,0 +1,262 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+.fcontainer {
+    background: radial-gradient(circle at bottom left, #282627 30%, #fff); 
+}
+.wrapper {
+    padding: 50px;
+}
+.fill {
+    background-color: #282627;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.fill .nama{
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.fill .nama h1 {
+    font-size: 120px;
+}
+.fill .gmbr {
+    text-align: center;
+}
+.fill .gmbr img{
+    padding-top: 10px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.fill .gmbr p{
+    color: white;
+    width: 600px;
+    text-align: justify;
+}
+/* fill 2 */
+.fill2 {
+    background-color: white;
+    justify-content: space-around;
+    display: flex;
+    padding: 30px;
+}
+
+/* kiri */
+.fill2 .left {
+    width: 400px;
+    justify-content: space-around;
+}
+.fill2 .left .exp {
+    padding-bottom: 100px;
+}
+.fill2 .left .skill {
+    padding-bottom: 100px;
+}
+.fill2 .left .skill ul {
+    padding-left: 50px;
+}
+.fill2 .left .kontak {
+    padding-bottom: 50px;
+}
+
+/* kanan */
+.fill2 .right {
+    width: 400px;
+}
+.fill2 .right .education {
+    padding: 85px 0 150px 0;
+}
+
+/* bagan 2 */
+.prtfl {
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+}
+.luar {
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 1050px;
+}
+/* menu/navbar */
+.slct {
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.slct ul{
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+.slct ul li {
+    list-style: none;
+    padding: 7px;
+}
+.slct ul li a {
+    text-decoration: none;
+    color: #282627;
+    font-size: 30px;
+    padding: 10px;
+}
+.slct ul li a:hover{
+    border-radius: 10px;
+    background-color: #282627;
+    color: white;
+    transition: 0.3s;
+}
+.luar h2 {
+    padding: 20px;
+    text-align: center;
+}
+.luar2 {
+    display: flex;
+    justify-content: space-around;
+}
+/* .colum {
+    display: flex;
+    justify-content: space-around;
+} */
+.outer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.inner {
+    width: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+.hdr {
+    padding: 15px;
+    display: flex;
+}
+.hdr img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.hdr h3 {
+    padding: 5px 0 5px 10px;
+}
+.isi img {
+    width: 100%;
+}
+.isi video {
+    width: 100%;
+}
+/* bagan intrct */
+.intrct {
+    display: flex;
+    padding: 15px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+/* bagan caption */
+.captionn {
+    padding: 20px;
+}
+.wktu {
+    text-align: right;
+    font-size: 12px;
+}
+/* dragging */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+
+  /* Responsive screen */
+  @media screen and (max-width: 467px) {
+    /* keseluruhan */
+    .fcontainer {
+        width: auto;
+    }
+    /* bagian cv */
+    .wrapper {
+        width: auto;
+    }
+    .fill .nama h1 {
+        font-size: 50px;
+    }
+    .fill .gmbr img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .fill .gmbr p {
+        font-size: 8px;
+        width: 150px;
+    }
+    /* bagan2 */
+    .fill2 .left {
+        width: 150px;
+    }
+    .fill2 .right {
+        width: 150px;
+    }
+    /* kiri */
+    .fill2 .left .skill ul {
+        padding-left: 20px;
+    }
+    .left h3 {
+        font-size: 15px;
+    }
+    .left p {
+        font-size: 12px;
+    }
+    .left ul li {
+        font-size: 10px;
+    }
+    /* kanan */
+    .right h3 {
+        font-size: 15px;
+    }
+    .right p {
+        font-size: 12px;
+    }
+    .right .education p {
+        font-size: 9px;
+    }
+    .fill2 .right .education {
+        padding: 85px 0 120px 0;
+    }
+    /* untuk bagian bawah */
+    .luar2 {
+        display: block;
+        width: 350px;
+    }
+    .mnu .slct ul {
+        padding: 5px;
+    }
+    .mnu .slct ul li {
+        padding: 5px;
+    }
+    .mnu .slct ul li a {
+        font-size: 20px;
+    }
+    .intrct {
+        padding: 15px;
+        font-size: 20px;
+    }
+    .captionn {
+        font-size: 12px;
+    }
+    .wktu {
+        font-size: 12px;
+    }
+  }
